@@ -1,8 +1,8 @@
 {
-  "name": "agency-final",
+  "name": "Tajem-Master",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --env production"
