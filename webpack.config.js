@@ -25,7 +25,11 @@ const config = {
       },
       {
         test: /\.scss$/,
-        use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+        use: [ 'style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.png$/,
+        use: 'file-loader?name=[hash:6].[ext]&outputPath=dist/images/'
       }
     ]
   },
