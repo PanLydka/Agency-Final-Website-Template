@@ -1,0 +1,97 @@
+
+
+body{
+   max-width: 1600px;
+   width: 1600px;
+   margin: 0 auto;
+}
+
+header{
+  background-image: url("../img/test.png");
+  max-width: 1600px;
+  img{
+    max-width: 128px;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  .menu{
+    display: block;
+    ul{
+      list-style: none;
+
+      li a{
+        float: left;
+        color: red;
+        text-decoration: none;
+        font-family: 'Roboto', black;
+        color: white;
+      }
+    }
+    }
+
+  h2{
+    font-family: 'Playfair Display', black;
+    font-size: 32px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  hr{
+    display: block;
+    height: 1px;
+    border-top: 1px solid #00cccc;
+    background-color: #00cccc;
+    border: 0;
+    padding: 0;
+  }
+
+  p{
+    font-family: 'Roboto', light;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .motto{
+    margin-top: 5%;
+    margin-left: 17%;
+  }
+
+  font-size: 13px;
+  color: white;
+
+  .button-header{
+    margin-left: 41.67%;
+
+    button{
+      width: 60%;
+      margin-left: 25%;
+      text-align: center;
+      text-decoration: none;
+      padding: 8px;
+      border-color: #00cccc;
+      color: #00cccc;
+      background-color: Transparent;
+      text-transform: uppercase;
+      font-family: 'Hammersmith One', Regular;
+      cursor: pointer;
+    }
+  }
+
+  .pagination{
+    li{
+      list-style:none;
+    }
+
+    li a{
+      display: block;
+
+      width: 10px;
+      height: 10px;
+      border-color: grey;
+      border: 1px solid #777;
+  border-radius: 100%;
+    }
+  }
+}

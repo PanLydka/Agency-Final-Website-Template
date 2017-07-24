@@ -1,13 +1,20 @@
+.grid-container{
+  width: 100%;
+  max-width: 1600px;
+  box-sizing: border-box;
+}
+
 .grid-container *{
+
   width: 100%;
   box-sizing: border-box;
 }
 
-.grid-container{
-  width: 100%;
+.grid-container hr{
+
+  width: 10%;
+  box-sizing: border-box;
 }
-
-
 .row:before,
 .row:after{
   content: "";
