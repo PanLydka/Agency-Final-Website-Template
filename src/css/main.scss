@@ -1,14 +1,14 @@
 
 
-body{
-   max-width: 1600px;
-   width: 1600px;
-   margin: 0 auto;
+.test{
+  width: 100%;
+  height: 400px;
+  background-color: red;
 }
-
 header{
   background-image: url("../img/test.png");
-  max-width: 1600px;
+
+  text-align: center;
   img{
     max-width: 128px;
     height: auto;
@@ -17,18 +17,29 @@ header{
   }
 
   .menu{
-    display: block;
-    ul{
-      list-style: none;
 
-      li a{
+
+
+    display: block;
+      ul{
+        list-style: none;
         float: left;
-        color: red;
-        text-decoration: none;
-        font-family: 'Roboto', black;
-        color: white;
+      li{
+        display: inline;
       }
-    }
+        li a{
+          margin: 15px;
+          float: left;
+          color: red;
+          text-decoration: none;
+          font-family: 'Roboto', black;
+          color: white;
+
+          &.active{
+            color: #00cccc
+          }
+        }
+      }
     }
 
   h2{
@@ -38,8 +49,9 @@ header{
     text-transform: capitalize;
   }
 
+
   hr{
-    display: block;
+    display: inline-block;
     height: 1px;
     border-top: 1px solid #00cccc;
     background-color: #00cccc;
@@ -53,7 +65,7 @@ header{
     text-align: center;
   }
 
-  .motto{
+  .mottso{
     margin-top: 5%;
     margin-left: 17%;
   }
@@ -62,15 +74,14 @@ header{
   color: white;
 
   .button-header{
-    margin-left: 41.67%;
+    text-align: center;
 
     button{
-      width: 60%;
-      margin-left: 25%;
-      text-align: center;
+      display: inline-block;
+      width: 20%;
       text-decoration: none;
       padding: 8px;
-      border-color: #00cccc;
+      border: 1px solid #00cccc;
       color: #00cccc;
       background-color: Transparent;
       text-transform: uppercase;
@@ -79,19 +90,38 @@ header{
     }
   }
 
-  .pagination{
-    li{
-      list-style:none;
-    }
 
-    li a{
-      display: block;
+}
 
+.pagination{
+  margin-left: 41.67%;
+  margin-right: 41.67%;
+  margin-top: 100px;
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    width: calc(100% / 18);
+    text-align: center;
+
+    span{
+      display: inline-block;
+      border-radius: 100px;
       width: 10px;
       height: 10px;
-      border-color: grey;
       border: 1px solid #777;
-  border-radius: 100%;
+
+      &.active{
+        background-color: #00cccc;
+        border: 1px solid #00cccc;
+      }
     }
   }
 }
