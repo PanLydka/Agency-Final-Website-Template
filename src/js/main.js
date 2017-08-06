@@ -1,6 +1,4 @@
- import _ from 'lodash'
- import { x } from './board/app.js';
+ import _ from 'lodash';
  import './../css/grid.css';
  import './../css/main.scss';
-
-console.log(x + '2');
+ import { scroll } from './board/scroll.js';

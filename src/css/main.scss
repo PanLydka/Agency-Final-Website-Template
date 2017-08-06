@@ -210,6 +210,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
     border: 1px solid #7c7791;
+
     img{
       width: 229px;
       height: 220px;
@@ -223,6 +224,15 @@
 
   &__information{
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .team__worker:nth-child(2){
+    order: 3;
+  }
+  .team__worker:nth-child(1){
+    order: 2;
   }
 }
 
