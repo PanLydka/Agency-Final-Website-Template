@@ -1,5 +1,6 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var pathResolve = require('path').resolve;
+var webpack = require('webpack');
 
 const config = {
   context: pathResolve('src'),
@@ -28,12 +29,11 @@ const config = {
         use: [ 'style-loader', 'css-loader', 'sass-loader']
       },
       {
-        test: /\.png$/,
+        test: /\.(png|mp4)$/,
         use: 'file-loader?name=[hash:6].[ext]&outputPath=dist/images/'
       }
     ]
   },
-
    devServer:{
      contentBase: __dirname + "/dist",
      inline: true,
@@ -45,6 +45,11 @@ const config = {
         new HtmlWebpackPlugin({
             template: './index.template.html'
         }),
+        new webpack.ProvidePlugin({
+            $: "jquery",
+            jQuery: "jquery",
+            "window.jQuery": "jquery"
+        })
     ]
 };
 
