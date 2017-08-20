@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
@@ -12,17 +13,17 @@
 
       <header id="naglowek" class="header">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 ">
             <h1> <a href="/"> <img class="logo" alt="Tajam" src=<%= require("./img/tajam-logo.png")%>> </a> </h1>
         </div>
         <nav id="menu" class="col-8 header__menu">
         	<ul>
-        		<li> <a href="#naglowek" class="active"> dom </a> </li>
+        		<li> <a href="#naglowek" class="active"> start </a> </li>
         		<li> <a href="#historia"> historia </a> </li>
         		<li> <a href="#pracownicy"> pracownicy </a> </li>
-        		<li> <a href="#uslugi"> Usługi </a> </li>
-        		<li> <a href="#"> tekst </a> </li>
-        		<li> <a href="#"> tekst </a> </li>
+        		<li> <a href="#uslugi"> osługi </a> </li>
+        		<li> <a href="#opinie"> opinie </a> </li>
+        		<li> <a href="#kontakt"> kontakt </a> </li>
         	</ul>
         </nav>
         </div>
@@ -38,7 +39,7 @@
             <button class="button button--header" id="learnMore"> Zobacz Więcej </button>
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-12 pagination">
             <ul>
               <li> <span class="pagination__circle pagination__circle--active"> </span> </li>
@@ -47,7 +48,7 @@
               <li> <span class="pagination__circle"> </span> </li>
             </ul>
             </div>
-        </div>
+        </div> -->
       </header>
 
       <main id="tresc-glowna">
@@ -72,7 +73,7 @@
               <p class="team__description"> Lorem ipsum dolor sit amet, consectetur daspi adipiscing elit.</p>
               <hr class="line line__team">
             </div>
-            <div class="col-12 team__workers">
+            <div class="col-12 team__workers ">
               <div class="team__worker"> <img alt="" src=<%= require("./img/worker--einstein.png")%>> <span class="team__name"> Einstein </span> </div>
               <div class="team__worker"> <img alt="" src=<%= require("./img/worker--turing.png")%>> <span class="team__name"> Turing </span> </div>
               <div class="team__worker"> <img alt="" src=<%= require("./img/worker--dirac.png")%>> <span class="team__name"> Dirac </span> </div>
@@ -126,7 +127,73 @@
             </div>
           </div>
         </section>
+        <section id="opinie">
+          <div class="row opinions">
+              <h2 class="visuallyhidden"> Opinie </h2>
+              <div class="owl-carousel">
+                <div class="owl-carousel__item"> <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus eros, dapibus ac eleifend in, blandit quis quam. In hac habitasse platea dictumst. Maecenas quis enim tempor, volutpat turpis vel, condimentum nulla </blockquote> <p> Lucille Ball</p> </div>
+                <div class="owl-carousel__item"> <blockquote> Proin rhoncus suscipit rutrum. Nulla dapibus, quam vel lacinia scelerisque, enim velit porta dui, id pulvinar tortor dolor eget arcu. Vivamus et imperdiet nulla, vel mattis urna.</blockquote> <p> Marlon Brando </p> </div>
+                <div class="owl-carousel__item"> <blockquote> Phasellus et enim vitae justo tempus egestas. Mauris lacinia accumsan nunc. In lorem dolor, dapibus pulvinar nulla vitae, dignissim dapibus felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi scelerisque gravida augue. </blockquote> <p> Charlie Chaplin  </p>  </div>
+                <div class="owl-carousel__item"> <blockquote> Pellentesque elementum orci id mauris gravida, ac faucibus felis efficitur. In vulputate vitae ipsum at sodales. Ut tempus massa vel nisl tincidunt, non auctor erat euismod. </blockquote> <p> Louis Armstrong</p> </div>
+                <div class="owl-carousel__item"> <blockquote> Phasellus malesuada quis metus vel tristique. Integer quis ex facilisis, congue lectus id, pretium arcu. Donec ut mi nibh. Etiam porta dolor sed mauris pharetra, efficitur fringilla elit vulputate. </blockquote> <p> Le Corbusier </p> </div>
+
+              </div>
+              <!-- <span class="customPrevBtn"> Wstecz </span>
+                      <span class="customNextBtn"> Dalej </span>
+                      <img src="./img/back#heh"> -->
+          </div>
+        </section>
+        <section id="kontakt">
+          <div class="row contact">
+            <h2 class="visuallyhidden"> Kontakt i sponsorzy </h2>
+            <div class="col-5 contact--margin">
+              <form action="#kontakt">
+                <h3 class="contact__title"> Daj nam dobrą wiadomość </h2>
+
+                <label for="nick" class="visuallyhidden"> Imię </label>
+                <input class="contact__field contact_field--input"ype="text" name="nick" id="nick" placeholder="Imię">
+
+                <label for="email" class="visuallyhidden"> E-mail </label>
+                <input class="contact__field contact_field--input" type="email" name="email" id="email" placeholder="Email">
+
+                <label for="topic" class="visuallyhidden"> Temat </label>
+                <input class="contact__field contact_field--input" type="text" name="topic" id="topic" placeholder="Temat">
+
+                <label for="content" class="visuallyhidden"> Treść </label>
+                <textarea class="contact__field contact__field--area" type="content" name="content" id="content" placeholder="Treść"></textarea>
+
+                <input class="button button--contact" type="submit" value="wyślij">
+              </form>
+            </div>
+            <div class="col-4">
+              <h3 class="contact__title"> Nasi szczęśliwi klienci </h3>
+              <img alt="" src=<%= require("./img/partner.png")%>>
+              <img alt="" src=<%= require("./img/partner.png")%>>
+              <img alt="" src=<%= require("./img/partner.png")%>>
+              <img alt="" src=<%= require("./img/partner.png")%>>
+              <img alt="" src=<%= require("./img/partner.png")%>>
+              <img alt="" src=<%= require("./img/partner.png")%>>
+              <img alt="" src=<%= require("./img/partner.png")%>>
+              <img alt="" src=<%= require("./img/partner.png")%>>
+            </div>
+          </div>
+        </section>
       </main>
-    </div>
+      <footer>
+        <div class="row footer">
+          <div class="col-2">
+            <section id="stopka-informacje">
+              <h2> <img class="logo" alt="Tajam" src=<%= require("./img/tajam-logo.png")%>> </h2>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at faucibus diam. Arrows Icon made by Freepik from www.flaticon.com </p>
+            </section>
+          </div>
+          <div class="col-3">
+            fff
+          </div>
+          <div class="col-3">
+            fff
+          </div>
+        </div>
+      </footer>
   </body>
 </html>
