@@ -146,3 +146,10 @@ body{
 .col-offset-11 {
   margin-left: 91.66666667%;
 }
+
+/*@media screen and (max-width: 1000px) {
+  .col-3{
+    flex-basis: 30.33333333%;
+    max-width: 30.33333333%;
+  }
+}*/
