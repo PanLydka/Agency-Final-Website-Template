@@ -1,6 +1,8 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var pathResolve = require('path').resolve;
 var webpack = require('webpack');
+var urlLoader = require("url-loader");
+
 
 const config = {
   context: pathResolve('src'),
@@ -31,6 +33,10 @@ const config = {
       {
         test: /\.(png|mp4)$/,
         use: 'file-loader?name=[hash:6].[ext]&outputPath=dist/images/'
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        loader: 'url-loader?limit=10000&outputPath=dist/fontawesome/',
       }
     ]
   },
@@ -39,7 +45,8 @@ const config = {
      inline: true,
      stats: 'errors-only',
      open: true,
-     openPage: ''
+     openPage: '',
+     host: "192.168.0.6"
    },
    plugins: [
         new HtmlWebpackPlugin({
@@ -48,7 +55,7 @@ const config = {
         new webpack.ProvidePlugin({
             $: "jquery",
             jQuery: "jquery",
-            "window.jQuery": "jquery"
+            "window.jQuery": "jquery",
         })
     ]
 };
