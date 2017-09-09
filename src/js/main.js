@@ -4,8 +4,16 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
 
-//board
-import './board/scroll.js';
-import './board/headerslider.js';
+
+
+
+//styles
 import './../css/grid.css';
 import './../css/main.scss';
+
+//js
+import './board/scroll.js';
+import './board/opinionsSlider.js';
+
+
+require('font-awesome/css/font-awesome.css');
