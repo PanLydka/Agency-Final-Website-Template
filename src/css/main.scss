@@ -461,6 +461,7 @@
   display: flex;
   justify-content: center;
   color: #413d4b;
+  font-size: 30px;
 
   &__title{
     font-family: 'Playfair Display', serif;
@@ -565,7 +566,7 @@
     margin-top: 60px;
   }
 
-  .he{
+  .footer__button{
     border: 0.5px solid #e5e5e5;
     color: black;
     background: transparent;
@@ -618,11 +619,20 @@
     display: inline;
   }
 
-  .fa-facebook, .fa-twitter, .fa-dribbble,
-  .fa-instagram, .fa-google-plus, .fa-youtube{
-    display: inline;
-    border-radius: 50%;
-    border: 1px solid white;
+  .fa-stack{
+
+    a{
+      text-decoration: none;
+      color: white;
+
+      .fa-facebook, .fa-twitter, .fa-dribbble,
+      .fa-instagram, .fa-google-plus, .fa-youtube{
+        display: inline;
+        border-radius: 50%;
+        border: 1px solid white;
+        cursor: pointer;
+      }
+    }
   }
 
   &__links{
