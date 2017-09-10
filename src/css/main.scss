@@ -80,6 +80,15 @@
   z-index: 20;
 }
 
+@media screen and (min-width: 1300px) {
+    ul {
+        display: flex;
+        a{
+          padding: 1rem 2rem;
+        }
+    }
+}
+
 .customPrevBtn, .customNextBtn{
 
   //pad
@@ -144,14 +153,7 @@
 
 
 
-@media screen and (min-width: 1300px) {
-    ul {
-        display: flex;
-        a{
-          padding: 1rem 2rem;
-        }
-    }
-}
+
 
 .history{
   text-align: right;
@@ -187,19 +189,19 @@
     font-size: 14px;
   }
 
-
-}
-
-@media screen and (max-width: 650px) {
-    .history__image {
-        flex-basis: 0%;
+  @media screen and (max-width: 650px) {
+    &__image {
+          flex-basis: 0%;
     }
 
-    .history__text{
-        flex-basis: 100%;
-        min-width: 90%;
+    &__text{
+      flex-basis: 100%;
+      min-width: 90%;
     }
+  }
 }
+
+
 
 
 .team{
@@ -243,6 +245,15 @@
     }
   }
 
+  @media screen and (max-width: 1020px) {
+    &__worker:nth-child(2){
+      order: 3;
+    }
+    &__worker:nth-child(1){
+      order: 2;
+    }
+  }
+
   &__name{
     display: block;
     padding: 20px;
@@ -254,14 +265,7 @@
   }
 }
 
-@media screen and (max-width: 1020px) {
-  .team__worker:nth-child(2){
-    order: 3;
-  }
-  .team__worker:nth-child(1){
-    order: 2;
-  }
-}
+
 
 .services{
   color: #413d4b;
@@ -657,6 +661,12 @@
     margin-bottom: 40px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+
+
+    a{
+      color: white;
+      cursor: pointer;
+    }
   }
 
   @media screen and (max-width: 800px) {
