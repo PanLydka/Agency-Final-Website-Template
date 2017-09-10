@@ -1,57 +1,273 @@
 <!DOCTYPE html>
-  <html lang="pl" dir="ltr" itemscope itemtype="http://schema.org/Blog">
+<html lang="zxx">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+
     <title>Tajem Master</title>
   </head>
   <body>
     <div class="grid-container">
 
-      <header id="header">
+      <header id="naglowek" class="header">
         <div class="row">
-          <div class="col-3">
-            <h1> <a href="/"> <img class="logo" align="middle" alt="Tajam" src=dist/images/c4adc7.png> </a> </h1>
+          <div class="col-4 ">
+            <h1> <a href="#start"> <img class="logo" alt="Tajam" src=dist/images/b4ffe7.png> </a> </h1>
         </div>
-        <nav id="menu" class="col-3 menu">
+        <nav id="menu" class="col-8 header__menu">
         	<ul>
-        		<li> <a href="#" class="active"> POCZĄTEK </a> </li>
-        		<li> <a href="#"> O NAS </a> </li>
-        		<li> <a href="#"> TEXT </a> </li>
-        		<li> <a href="#"> TEXT </a> </li>
-        		<li> <a href="#"> TEXT </a> </li>
-        		<li> <a href="#"> TEXT </a> </li>
+        		<li> <a href="#start" class="active"> start </a> </li>
+        		<li> <a href="#historia"> historia </a> </li>
+        		<li> <a href="#pracownicy"> pracownicy </a> </li>
+        		<li> <a href="#uslugi"> osługi </a> </li>
+        		<li> <a href="#opinie"> opinie </a> </li>
+        		<li> <a href="#kontakt"> kontakt </a> </li>
         	</ul>
         </nav>
         </div>
         <div class="row">
-          <div class="col-6 motto">
-            <h2> Jesteśmy wyjątkową firmą pod względem wyjątkowości! </h2>
-            <hr>
-            <p> Strona nie jest autentyczną wizytówką firmy. Została wykonan w celach ćwiczeniowych i zaprezentowaniu umiejętności developera. </br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed magna turpis, iaculis fermentum lacinia nec, placerat eget turpis.  </p>
+          <div class="col-12">
+            <h2 class="header__motto"> Jesteśmy wyjątkową firmą pod względem wyjątkowości! </h2>
+            <hr class="line line__header">
+            <p class="header__description"> Strona nie jest autentyczną wizytówką firmy. Została wykonan w celach ćwiczeniowych i zaprezentowania umiejętności developera. </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-6 button-header">
-            <button id="learnMore"> Zobacz Więcej </button>
+          <div class="col-12">
+            <button class="button button--header"> Zobacz Więcej </button>
           </div>
-        </div>
-        <div class="row">
-          <nav class="col-6">
-            <div class="pagination"
-            <ul>
-              <li> <span class="active"> </span> </li>
-              <li> <span> </span> </li>
-              <li> <span> </span> </li>
-              <li> <span> </span> </li>
-            </ul>
-            </div>
-          </nav>
         </div>
       </header>
+
+      <main id="tresc-glowna">
+        <section id="historia" >
+          <div class="row history">
+            <div class="col-3 history__image">
+                <img alt="" src=dist/images/92d52b.png>
+            </div>
+            <div class="col-4 history__text">
+                  <h2 class="history__title"> Nasza Historia </h2>
+                  <p class="history__description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan euismod tinciduntm, aliquam venenatis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan euismod tinciduntm, aliquam venenatis</p>
+                  <p class="history__description"> Turpis nec rhoncus efficitur, leo arcu laoreet risus, non dictum lorem nunc eget tellus. Integer scelerisque lobortis neque et pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan euismod tinciduntm, aliquam venenatis </p>
+                  <button class="button button--history"> Zobacz Więcej </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="pracownicy">
+          <div class="row team">
+            <div class="col-6">
+              <h2 class="team__title"> Poznaj nasz wspaniały zespół </h2>
+              <p class="team__description"> Lorem ipsum dolor sit amet, consectetur daspi adipiscing elit.</p>
+              <hr class="line line__team">
+            </div>
+            <div class="col-12 team__workers ">
+              <h3 class="team__worker"> <img alt="" src=dist/images/70077e.png> <span class="team__name"> Einstein </span> </h3>
+              <h3 class="team__worker"> <img alt="" src=dist/images/f8272e.png> <span class="team__name"> Turing </span> </h3>
+              <h3 class="team__worker"> <img alt="" src=dist/images/90f362.png> <span class="team__name"> Dirac </span> </h3>
+              <h3 class="team__worker"> <img alt="" src=dist/images/0b8c3c.png> <span class="team__name"> Tesla </span> </h3>
+            </div>
+            <div class="col-12 team__information">
+              <p> Zostań częścią naszego zespołu, dołącz do nas! </p>
+              <button class="button button--team"> Oferty </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="uslugi">
+          <div class="row services">
+            <div class="col-6">
+              <h2 class="services__title"> Nasze Usługi </h2>
+              <p class="services__description"> Lorem ipsum dolor sit amet, consectetur daspi adipiscing elit.</p>
+              <hr class="line line__services">
+            </div>
+            <div class="col-9 services__works">
+              <div class="services__work services__work--border">
+                <img alt="" src=dist/images/6881f0.png>
+                <h3> Lorem ipsum </h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  In commodo augue tellus,a ullamcorper</p>
+              </div>
+              <div class="services__work services__work--border">
+                <img alt="" src=dist/images/6881f0.png>
+                <h3> Lorem ipsum </h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  In commodo augue tellus,a ullamcorper</p>
+              </div>
+              <div class="services__work services__work--border">
+                <img alt="" src=dist/images/6881f0.png>
+                <h3> Lorem ipsum </h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  In commodo augue tellus,a ullamcorper</p>
+              </div>
+              <div class="services__work services__work--border">
+                <img alt="" src=dist/images/6881f0.png>
+                <h3> Lorem ipsum </h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  In commodo augue tellus,a ullamcorper</p>
+              </div>
+              <div class="services__work services__work--border">
+                <img alt="" src=dist/images/6881f0.png>
+                <h3> Lorem ipsum </h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  In commodo augue tellus,a ullamcorper</p>
+              </div>
+              <div class="services__work services__work--border">
+                <img alt="" src=dist/images/6881f0.png>
+                <h3> Lorem ipsum </h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.  In commodo augue tellus,a ullamcorper</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="opinie">
+          <div class="row opinions">
+              <h2 class="visuallyhidden"> Opinie </h2>
+
+              <span class="icon">
+                  <span class="fa fa-angle-left fa-3x customPrevBtn" data-icon="adres" aria-hidden="true"></span>
+                  <span class="visuallyhidden">Poprzednia Opinia </span>
+              </span>
+
+              <div class="owl-carousel">
+                <div class="owl-carousel__item"> <blockquote> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus eros, dapibus ac eleifend in, blandit quis quam. In hac habitasse platea dictumst. Maecenas quis enim tempor, volutpat turpis vel, condimentum nulla </blockquote> <p> Lucille Ball</p> </div>
+                <div class="owl-carousel__item"> <blockquote> Proin rhoncus suscipit rutrum. Nulla dapibus, quam vel lacinia scelerisque, enim velit porta dui, id pulvinar tortor dolor eget arcu. Vivamus et imperdiet nulla, vel mattis urna.  </blockquote> <p> Marlon Brando </p> </div>
+                <div class="owl-carousel__item"> <blockquote> Phasellus et enim vitae justo tempus egestas. Mauris lacinia accumsan nunc. In lorem dolor, dapibus pulvinar nulla vitae, dignissim dapibus felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi scelerisque gravida augue. </blockquote> <p> Charlie Chaplin  </p>  </div>
+                <div class="owl-carousel__item"> <blockquote> Pellentesque elementum orci id mauris gravida, ac faucibus felis efficitur. In vulputate vitae ipsum at sodales. Ut tempus massa vel nisl tincidunt, non auctor erat euismod.   </blockquote> <p> Louis Armstrong</p> </div>
+                <div class="owl-carousel__item"> <blockquote> Phasellus malesuada quis metus vel tristique. Integer quis ex facilisis, congue lectus id, pretium arcu. Donec ut mi nibh. Etiam porta dolor sed mauris pharetra, efficitur fringilla elit vulputate. </blockquote> <p> Le Corbusier </p> </div>
+              </div>
+
+
+              <span class="icon">
+                  <span class="fa fa-angle-right fa-3x customNextBtn" data-icon="adres" aria-hidden="true"></span>
+                  <span class="visuallyhidden">Następna Opinia</span>
+              </span>
+
+          </div>
+        </section>
+        <section id="kontakt">
+          <div class="row contact">
+            <h2 class="visuallyhidden"> Kontakt i sponsorzy </h2>
+            <div class="col-5 contact--margin">
+              <form action="#kontakt">
+                <h3 class="contact__title"> Daj nam dobrą wiadomość </h3>
+
+                <label for="nick" class="visuallyhidden"> Imię </label>
+                <input class="contact__field contact_field--input" type="text" name="nick" id="nick" placeholder="Imię">
+
+                <label for="email" class="visuallyhidden"> E-mail </label>
+                <input class="contact__field contact_field--input" type="email" name="email" id="email" placeholder="Email">
+
+                <label for="topic" class="visuallyhidden"> Temat </label>
+                <input class="contact__field contact_field--input" type="text" name="topic" id="topic" placeholder="Temat">
+
+                <label for="content" class="visuallyhidden"> Treść </label>
+                <textarea class="contact__field contact__field--area" name="content" id="content" placeholder="Treść"></textarea>
+
+                <input class="button button--contact" type="submit" value="wyślij">
+              </form>
+            </div>
+            <div class="col-5">
+              <h3 class="contact__title"> Nasi szczęśliwi klienci </h3>
+              <img alt="" src=dist/images/1f8a62.png>
+              <img alt="" src=dist/images/1f8a62.png>
+              <img alt="" src=dist/images/1f8a62.png>
+              <img alt="" src=dist/images/1f8a62.png>
+              <img alt="" src=dist/images/1f8a62.png>
+              <img alt="" src=dist/images/1f8a62.png>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="sotpka">
+        <div class="row footer">
+            <div class="col-3">
+              <section id=''>
+                <h2> <img class="footer__logo" alt="Tajam" src=dist/images/b4ffe7.png> </h2>
+                <p class="footer__description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.s Sed at faucibus diam. Arrows Icon made by Freepik from www.flaticon.com </p>
+              </section>
+            </div>
+            <div class="col-3 footer--padding">
+              <section id='he'>
+                <h2 class="footer__title"> Nasze studia </h2>
+                <div class="footer__block">
+                  <span class="footer__iconLocation">
+  	                  <span class="fa fa-map-marker" data-icon="adres" aria-hidden="true"></span>
+  	                  <span class="visuallyhidden">Adres</span>
+                  </span>
+                  <p class="footer__contact">Ruko cucruk, Jl. Radio luar dalem jos No.12 - 13, Kalideres - Jakarta Barat
+                    11480 - Indonesia </p>
+                </div>
+                <div class="footer__block footer__block--margin">
+                  <span class="footer__iconLocation">
+    	                 <span class="fa fa-phone" data-icon="telefon" aria-hidden="true"></span>
+    	                 <span class="visuallyhidden">Telefon</span>
+                  </span>
+                  <p class="footer__contact">(+48) 111-222-333 </p>
+                </div>
+              </section>
+            </div>
+            <div class="col-4">
+              <section id="socials">
+                <h2 class="footer__title"> Zostań z nami </h2>
+                <label for="newsletter" class="visuallyhidden"> E-mail </label>
+                <input class="footer__newsletter" type="email" id="newsletter" name="newsletter" placeholder="Subscribe our newsletter">
+                <button class="footer__button"> <i class="fa fa-paper-plane-o" aria-hidden="true"></i> </button>
+                <br>
+                <div class="socials">
+                  <span class="fa-stack fa-lg">
+                    <a href="https://www.facebook.com/" title="Facebook">
+                      <span class="fa fa-facebook fa-stack-1x" data-icon="facebook" aria-hidden="true"></span>
+                      <span class="visuallyhidden">Facebook</span>
+                    </a>
+                  </span>
+
+                  <span class="fa-stack fa-lg">
+                    <a href="https://twitter.com" title="Twitter">
+                      <span class="fa fa-twitter fa-stack-1x" data-icon="twitter" aria-hidden="true"></span>
+                      <span class="visuallyhidden">Twitter</span>
+                    </a>
+                  </span>
+
+                  <span class="fa-stack fa-lg">
+                    <a href="https://dribbble.com/" title="Dribble">
+                      <span class="fa fa-dribbble fa-stack-1x" data-icon="dribbble" aria-hidden="true"></span>
+                      <span class="visuallyhidden">Dribbble</span>
+                    </a>
+                  </span>
+
+                  <span class="fa-stack fa-lg">
+                    <a href="https://www.instagram.com/" title="Instagram">
+                      <span class="fa fa-instagram fa-stack-1x" data-icon="instagram" aria-hidden="true"></span>
+                      <span class="visuallyhidden">instagram</span>
+                    </a>
+                  </span>
+
+                  <span class="fa-stack fa-lg">
+                    <a href="https://plus.google.com" title="Google Plus">
+                      <span class="fa fa-google-plus fa-stack-1x" data-icon="google-plus" aria-hidden="true"></span>
+                      <span class="visuallyhidden">Google plus</span>
+                    </a>
+                  </span>
+
+                  <span class="fa-stack fa-lg">
+                    <a href="https://www.youtube.com/" title="Youtube">
+                      <span class="fa fa-youtube fa-stack-1x" data-icon="youtube" aria-hidden="true"></span>
+                      <span class="visuallyhidden">Youtube</span>
+                    </a>
+                  </span>
+                </div>
+              </section>
+            </div>
+              <div class="col-8 footer__links">
+                <a href=""> pomoc </a>
+                <a href=""> warunki </a>
+                <a href=""> prywatność</a>
+              </div>
+              <div class="col-4 footer__copyright">
+                <span> Copyright 	&copy; 2017 - Tajem Creative </span>
+              </div>
+        </div>
+      </footer>
     </div>
   <script type="text/javascript" src="dist/bundle.js"></script></body>
 </html>
