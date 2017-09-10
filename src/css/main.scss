@@ -15,7 +15,7 @@
 
        a {
 
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-Regular;
         font-weight: 900;
         color: white;
         text-transform: uppercase;
@@ -30,7 +30,7 @@
   }
 
   &__motto{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Regular;
     font-weight: 900;
     text-transform: capitalize;
     font-size: 32px;
@@ -41,7 +41,7 @@
 
 
   &__description{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-Regular;
     width: 70%;
     font-weight: 300;
     font-size: 14px;
@@ -126,6 +126,17 @@
   &--contact{
     width: 100px;
   }
+
+  &--footer{
+    border: 0.5px solid #e5e5e5;
+    color: black;
+    background: transparent;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    width: 50px;
+  }
 }
 
 .line{
@@ -176,7 +187,7 @@
   }
 
   &__title{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Regular;
     font-weight: 700;
     font-size: 22px;
     text-transform: uppercase;
@@ -216,13 +227,13 @@
   text-transform: uppercase;
 
   &__title{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Reular;
     font-size: 22px;
     margin-top: 50px;
   }
 
   &__description{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Regular;
     font-size: 14px;
   }
 
@@ -235,7 +246,7 @@
 
   &__worker{
     margin: 8px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-Regular;
     font-weight: 900;
     border: 1px solid #7c7791;
 
@@ -274,13 +285,13 @@
   text-align: center;
 
   &__title{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Regular;
     font-size: 22px;
     margin-top: 50px;
   }
 
   &__description{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Regular;
     font-size: 14px;
   }
 
@@ -294,12 +305,12 @@
     width: calc(99%/3);
 
     h3{
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-Regular;
       font-weight: 900;
     }
 
     p{
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-Regular;
       font-weight: 300;
       color: 333333;
       padding-left: 15px;
@@ -368,7 +379,7 @@
   .owl-carousel::before{
     content: '“';
     font-size: 100px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Regular;
     height: 100px;
     display: block;
   }
@@ -385,14 +396,14 @@
       word-spacing: 5px;
 
       blockquote{
-        font-family: 'Playfair Display', serif;
+        font-family: 'Playfair Display', Regular;
         font-size: 16px;
       }
 
       p{
         padding-top: 40px;
         padding-bottom: 20px;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-Regular;
         font-size: 14px;
         font-weight: 900;
       }
@@ -468,9 +479,10 @@
   font-size: 30px;
 
   &__title{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', Regular;
     font-size: 22px;
     font-weight: 700;
+    padding: 0 4px 0 4px;
   }
 
   &__field{
@@ -488,21 +500,17 @@
   }
 
   ::-webkit-input-placeholder{ /* Chrome/Opera/Safari */
-    padding-left: 8px;
     color: #c7c6c9;
     font-family: Tahoma;
     font-size: 1.3em;
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    padding-left: 8px;
     color: #c7c6c9;
   }
   :-ms-input-placeholder { /* IE 10+ */
-    padding-left: 8px;
     color: #c7c6c9;
   }
   :-moz-placeholder { /* Firefox 18- */
-    padding-left: 8px;
     color: #c7c6c9;
   }
 
@@ -512,15 +520,22 @@
   }
 
   @media screen and (max-width: 1300px) {
+    img{
+      text-align: center;
+      width: calc(99%/2);
+      margin-left: 20%;
 
-      img{
-        text-align: center;
-        width: calc(99%/2);
-
-        &:nth-child(2n+1){
-          display: none;
-        }
+      &:nth-child(2n+1){
+        display: none;
       }
+    }
+  }
+
+  @media screen and (max-width: 680px) {
+    .col-5{
+      flex-basis: 70%;
+      max-width: 70%;
+    }
   }
 
 }
@@ -531,7 +546,7 @@
   display: flex;
   justify-content: center;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-Regular;
   font-weight: 300;
   margin-bottom: 0px;
 
@@ -565,21 +580,9 @@
 
   &__title{
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-Regular;
     font-weight: 900;
     margin-top: 60px;
-  }
-
-  .footer__button{
-    border: 0.5px solid #e5e5e5;
-    color: black;
-    background: transparent;
-    padding: 10px;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.3);
-    border: none;
-    width: 50px;
-
   }
 
   &__newsletter{
@@ -649,7 +652,7 @@
       text-decoration: none;
       text-transform: uppercase;
       padding: 30px;
-      font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-Regular;
       font-size: 14px;
       cursor: pointer;
 
@@ -659,7 +662,7 @@
   &__copyright{
     margin-top: 50px;
     margin-bottom: 40px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-Regular;
     font-size: 14px;
 
 
