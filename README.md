@@ -9,6 +9,7 @@ Here: https://panlydka.github.io/Tajem-Master-Website-Template/
 ```
 git clone https://github.com/PanLydka/Tajem-Master-Website-Template
 cd Tajem-Master-Website-Template
+npm install
 npm run build
 ```
 ## Host
